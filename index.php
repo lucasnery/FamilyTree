@@ -1,6 +1,7 @@
 <?php
     //Array com arvore em Json.
     $arr = array(
+        "paterna"=>
         array(
             "nome" => "Alicia Nery de Oliveira",
             "idade" => "84 anos",
@@ -38,7 +39,7 @@
                 )
             )
         ),
-
+        "materna"=>
         array(
             "nome"=>"Maria Moraes",
             "idade"=>"60",
@@ -73,21 +74,10 @@
         )
     );
 
-    //$name = "familytree.txt"; //nome do arquivo txt que vai receber o json
+    //$name = "familytree.json"; //nome do arquivo txt que vai receber o json
 
-    //$file = fopen($name, 'a'); //informar arquivo que será aberto e abrí-lo
-    //fwrite($file, json_encode($arr)); //escrever dados no arquivo
-    //fclose($file); //fechar arquivo txt que está sendo utilizado
-    //echo "Arquivo txt criado!";
+    
+    $paterna = $jsonObj->paterna;
 
-    $json_data = file_get_contents("familytree.txt");
-    $json = json_decode($json_data);
-
-    echo "<table>";
-
-    foreach($json as $tree){
-        echo "<tr>
-            <td>" . $tree->nome. "
-        </tr>";
-    }
+    print_r($paterna);
 ?>
