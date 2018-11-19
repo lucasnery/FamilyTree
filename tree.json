@@ -1,0 +1,10 @@
+{
+    "nome": "Alicia Nery de Oliveira", "nascimento": "21/11/1954", "parentesco": "Avó Paterna": "filhos":[
+        {
+            "nome": "Adalicio Nery de Novaes", "nascimento": "18/07/1967", "parentesco": "Pai": "filhos":[]
+        },
+        {
+            "nome": "João Nery", "nascimento": "18/08/1967", "parentesco":"Tio"
+        },
+    ]
+}
